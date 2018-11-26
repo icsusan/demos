@@ -35,6 +35,10 @@ public class BigXmlTestBillIteratorApiApp {
 	private static final String CONTENT_ELEMENT = "BILLS";
 	private static final String DATA_ELEMENT = "BILL";
 	
+	
+	
+	
+	
 	public static final String DATE_FORMAT = "dd/MM/yyyy hh:mm:ss";
 	public static final SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
 
