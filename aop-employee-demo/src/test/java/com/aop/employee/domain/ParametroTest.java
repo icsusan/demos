@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import com.aop.employee.model.Parametro;
+import com.aop.employee.util.model.Parametro;
 
 @RunWith(JUnit4.class)
 public class ParametroTest {

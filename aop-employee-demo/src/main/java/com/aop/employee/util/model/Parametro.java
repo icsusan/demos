@@ -1,4 +1,4 @@
-package com.aop.employee.model;
+package com.aop.employee.util.model;
 
 @SuppressWarnings("rawtypes")
 public class Parametro {

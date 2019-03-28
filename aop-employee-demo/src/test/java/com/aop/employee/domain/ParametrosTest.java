@@ -5,8 +5,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import com.aop.employee.model.Employee;
-import com.aop.employee.model.Parametro;
-import com.aop.employee.model.Parametros;
+import com.aop.employee.util.model.Parametro;
+import com.aop.employee.util.model.Parametros;
 
 @RunWith(JUnit4.class)
 public class ParametrosTest {
