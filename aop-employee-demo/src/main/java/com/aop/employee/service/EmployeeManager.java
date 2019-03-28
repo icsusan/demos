@@ -10,7 +10,7 @@ public interface EmployeeManager {
 
 	public List<Employee> getAllEmployee();
 
-	public void createEmployee(Employee employee);
+	public void createEmployee(Employee employee) throws Exception;
 
 	public void deleteEmployee(Integer employeeId);
 

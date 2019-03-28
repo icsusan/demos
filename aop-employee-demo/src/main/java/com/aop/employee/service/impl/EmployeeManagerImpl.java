@@ -21,8 +21,9 @@ public class EmployeeManagerImpl implements EmployeeManager {
 		return new ArrayList<Employee>();
 	}
 
-	public void createEmployee(Employee employee) {
+	public void createEmployee(Employee employee) throws Exception {
 		System.out.println("Method createEmployee() called");
+		throw new Exception("Excepcion forzada....................");
 	}
 
 	public void deleteEmployee(Integer employeeId) {

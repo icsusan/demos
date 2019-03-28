@@ -1,4 +1,4 @@
-package com.aop.employee.aopemployeedemo;
+package com.aop.employee;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

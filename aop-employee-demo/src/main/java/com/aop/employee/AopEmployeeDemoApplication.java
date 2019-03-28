@@ -9,16 +9,22 @@ import com.aop.employee.model.Employee;
 import com.aop.employee.service.EmployeeManager;
 
 @SpringBootApplication
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy(proxyTargetClass=true)
 public class AopEmployeeDemoApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext context = SpringApplication.run(AopEmployeeDemoApplication.class, args);
+		
+		ApplicationContext context = SpringApplication.run(new Class[] {AopEmployeeDemoApplication.class, AopConfiguration.class}, args);
 		
         EmployeeManager manager = (EmployeeManager) context.getBean(EmployeeManager.class);
         
         manager.getEmployeeById(1);
-        manager.createEmployee(new Employee());
+        try {
+			manager.createEmployee(new Employee());
+		} catch (Exception e) {
+			System.out.println("Ajaaaaaaaaaaaaaaaaa");
+		}
+        
 	}
 
 }

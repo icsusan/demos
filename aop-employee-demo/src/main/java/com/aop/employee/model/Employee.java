@@ -6,7 +6,22 @@ public class Employee {
     private String firstName;
     private String lastName;
  
-    public Integer getId() {
+    public Employee() {
+    	
+    }
+    
+    /**
+	 * @param id
+	 * @param firstName
+	 * @param lastName
+	 */
+	public Employee(Integer id, String firstName, String lastName) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
+	public Integer getId() {
         return id;
     }
  
